@@ -1,0 +1,19 @@
+\usepackage{tcolorbox}
+\newcommand{\rb}[1]{
+	%\vspace{0.3cm}
+	\begin{tcolorbox}[colback=gray!05,%gray background
+		colframe=black,% black frame colour
+		width=\columnwidth,% Use 5cm total width,
+		arc=3mm, auto outer arc,
+		boxrule=0.5pt,
+		]
+		#1
+	\end{tcolorbox}
+}
+
+\newcommand{\roundedbox}[1]{
+	\rb{
+		\noindent
+		\textit{\textbf{#1}}
+	}
+}
