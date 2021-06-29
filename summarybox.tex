@@ -1,5 +1,6 @@
+\usepackage{tcolorbox}
 \definecolor{arsenic}{rgb}{0.23, 0.27, 0.29}
-\newtcolorbox{summarybox}{
+\newtcolorbox{summarybox}[1]{
 	colback=gray!5,
 	colframe=arsenic,
 	boxrule=0.4mm,
@@ -8,5 +9,5 @@
 	top=1.5mm,
 	bottom=1.5mm,
 	fonttitle=\bfseries,
-	title={Main findings for \textbf{RQ$_X$}}
+	title={#1}
 }
